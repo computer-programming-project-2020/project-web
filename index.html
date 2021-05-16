@@ -64,13 +64,19 @@
             .nav-button:hover{
                 background: #314b83;
             }
-            .nav-link{
+            .alllink{
                 position: absolute;
+                width: 60%;
+                height: 100%;
+                left: 7.5%;
+            }
+            .nav-link{
+                position: relative;
                 background: none;
                 width: 10vw;
                 height: 7.5vh;
                 display: inline-flex;
-                left: var(--whereX);
+                margin-left: auto%;
             }
             .nav-link:hover{
                 background: #314b83;
@@ -132,7 +138,6 @@
                 margin-left: 12.5vw;
                 font-size: 2rem;
                 text-align: center;
-
             }
             .bubble:hover{
                 background: #d6c41f;
@@ -284,9 +289,11 @@
     <body onload="chil()">
         <div class="Areanav">
             <a href="#top"><div class="nav-icon sm-9"></div></a>
+            <div class="alllink">
             <a href="#top"><div class="nav-link sm-0" style="--whereX: 7%;"><span style="--whereX: 35%;">home</span></div></a>
             <a href="#func"><div class="nav-link sm-0" style="--whereX: 17%;"><span style="--whereX: 25%;">function</span></div></a>
             <a href="#aboutUs"><div class="nav-link" style="--whereX: 27%;"><span style="--whereX: 25%;">about us</span></div></a>
+            </div>
             <button class="nav-button sm-3" onclick="menuState()">
                 <svg class="menuImg" id="Menu" data-status="wait" viewBox="0 0 100 100">
                     <path class="Line" d="M10 30 h80 M10 50 h80 M10 70 h80" stroke="hsl(0, 0%, 70%)" stroke-width="10"/>
