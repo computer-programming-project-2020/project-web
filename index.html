@@ -208,26 +208,32 @@
                 z-index: 0;
             }
             .ul{
+                position: relative;
+                width: 50vw;
                 font-size: var(--fSize);
-                transform: translate(32.5vw);
                 color: var(--color);
+                display: inline-flex;
+                left: 40%;
             }
             .li{
+                position: relative;
                 font-size: var(--fSize);
+                width: 50vw;
                 color: var(--color);
-                transform: translate(35vw);
+                display: inline-flex;
+                left: 45%;
             }
             .card{
-                position: absolute;
-                width: 20vw;
-                height: 40vh;
+                position: relative;
+                width: 200px;
+                height: 200px;
                 background: none;
                 border-radius: 2vh;
-                display: inline-flex;
-                left: var(--whereX);
+                display: inline-block;
+                margin:auto;
             }
             .profile{
-                position: absolute;
+                position: relative;
                 width: 70%;
                 height: 70%;
                 background: black;
@@ -259,19 +265,19 @@
                 width: 100%;
                 bottom: 0%;
             }
-            .center{
-                position: relative;
-                display: block;
-                margin: auto;
-                width: 40.5vw;
-                height: 40vh;
-            }
             a{
                 color: var(--color, #d9dad5);
                 cursor: pointer;
             }
             .go{
                 width: 100%;
+            }
+            .center{
+                position: relative;
+                width: 64%;
+                height: auto;
+                display: block;
+                margin: auto;
             }
         </style>
     </head>
@@ -337,24 +343,21 @@
             <div id="aboutUs" class="Box" style="--colorBox: #194957;--heightBox: 150vh">
                 <div class="Text Head" style="--color: #fbff00;--fSize: 3rem;"><br>About us</div>
                 <br>
-
                 <div class="center">
-                    <div class="card" style="--whereX:0%">
+                    <div class="card" >
                         <div class="profile" p="ultra"></div>
                         <div class="name">Kaiwin Naw-in <br>63070013</div>
                     </div>
-                    <div class="card" style="--whereX:50%">
+                    <div class="card" >
                         <div class="profile" p="non"></div>
                         <div class="name">Natanon Hanchana <br>63070045</div>
                     </div>
-                </div>
-                <br>
-                <div class="center">
-                    <div class="card"style="--whereX:0%">
+
+                    <div class="card">
                         <div class="profile" p="roong"></div>
                         <div class="name">Pimmada Krunsungnoen <br>63070120</div>
                     </div>
-                    <div class="card"style="--whereX:50%">
+                    <div class="card">
                         <div class="profile" p="boss"></div>
                         <div class="name">Supachai Kheawjuy <br>63070168</div>
                     </div>
